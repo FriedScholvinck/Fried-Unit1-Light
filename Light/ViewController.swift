@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     // create action when button is tapped
     @IBAction func buttonPressed(_ sender: Any) {
         
-        // light on or off
+        // switch light on or off
         lightOn = !lightOn
         
         // update view
