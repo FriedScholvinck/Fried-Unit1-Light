@@ -18,15 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iz-Fg-ykp">
-                                <rect key="frame" x="-56" y="-74" width="512" height="1013"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iz-Fg-ykp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5od-os-Aje"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Iz-Fg-ykp" secondAttribute="bottom" id="M9f-5T-0ra"/>
+                            <constraint firstAttribute="trailing" secondItem="1Iz-Fg-ykp" secondAttribute="trailing" id="bx8-VP-eUa"/>
+                            <constraint firstItem="1Iz-Fg-ykp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hWp-Qr-3Qr"/>
+                            <constraint firstItem="1Iz-Fg-ykp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ldo-y9-DDL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
