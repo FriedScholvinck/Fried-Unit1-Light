@@ -10,27 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // create variable to change screen
     var lightOn = true
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
         
-    // create action when button is tapped
+    /// change boolean and update view
     @IBAction func buttonPressed(_ sender: Any) {
-        
-        // switch light to on or off
         lightOn = !lightOn
-        
-        // update view
         updateUI()
     }
     
     func updateUI() {
-        
-        // this is an if statement
         view.backgroundColor = lightOn ? .white : .black
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 }
